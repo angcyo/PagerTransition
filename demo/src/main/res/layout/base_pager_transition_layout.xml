@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+    <com.angcyo.pager.transition.demo.MatrixLayout
+            android:id="@+id/base_matrix_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <!--用来做图片切换-->
+        <com.angcyo.pager.transition.demo.RViewPager
+                android:id="@+id/base_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        <!--用来执行动画-->
+        <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/base_preview_view"
+                android:layout_width="wrap_content"
+                android:scaleType="fitCenter"
+                android:layout_height="wrap_content"/>
+
+    </com.angcyo.pager.transition.demo.MatrixLayout>
+
+</merge>
